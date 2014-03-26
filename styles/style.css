@@ -1,0 +1,364 @@
+/*---------------------------------------------------------------------------------
+   Common Styles
+---------------------------------------------------------------------------------*/
+@font-face {
+  font-family: "OpenSansLight";
+  src: url(../fonts/OpenSans-Light-webfont.eot);
+  src: url(../fonts/OpenSans-Light-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/OpenSans-Light-webfont.woff) format("woff"), url(../fonts/OpenSans-Light-webfont.ttf) format("truetype"), url(../fonts/OpenSans-Light-webfont.svg#OpenSansLight) format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OpenSansRegular";
+  src: url(../fonts/OpenSans-Regular-webfont.eot);
+  src: url(../fonts/OpenSans-Regular-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/OpenSans-Regular-webfont.woff) format("woff"), url(../fonts/OpenSans-Regular-webfont.ttf) format("truetype"), url(../fonts/OpenSans-Regular-webfont.svg#OpenSansRegular) format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "OpenSansSemiBold";
+  src: url(../fonts/OpenSans-Semibold-webfont.eot);
+  src: url(../fonts/OpenSans-Semibold-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/OpenSans-Semibold-webfont.woff) format("woff"), url(../fonts/OpenSans-Semibold-webfont.ttf) format("truetype"), url(../fonts/OpenSans-Semibold-webfont.svg#OpenSansSemibold) format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "BlackJack";
+  src: url(../fonts/black_jack-webfont.eot);
+  src: url(../fonts/black_jack-webfont.eot?#iefix) format("embedded-opentype"), url(../fonts/black_jack-webfont.woff) format("woff"), url(../fonts/black_jack-webfont.ttf) format("truetype"), url(../fonts/black_jack-webfont.svg#black_jack) format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+/*float styles*/
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+.clearfix:after {
+    clear: both;
+}
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+html {
+	width: 100%;
+	height: 100%;
+	background-color: #394264;
+	background-color: #3d4670;
+}
+body {
+	position: relative;
+	width: 80%;
+	height: 100%;
+	height: 950px;
+	margin: 0.8em auto;
+
+	background: url("../images/sunset_over_the_ocean_by_horrorfan2.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	font-family: "OpenSansRegular", Calibri, Arial, sans-serif;
+	/*background-color: #1F253D;*/
+	text-align: center;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+	box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+}
+a {
+	text-decoration: none;
+	color: black;
+}
+ul li {	
+	display: inline;
+}
+h1 {
+	font-weight: 900;
+	font-size: 1.8em;
+	padding: 1.8em 0 1.0em 0;
+	color: #fff;
+}
+h2, h4 {
+	font-family: "BlackJack", "OpenSansSemiBold", Calibri, Verdana;
+	margin: 0 auto;	
+	background: #f2811d;
+	padding: 0.3em 0.4em;
+	font-size: 2.0em;
+	font-weight: 400;
+	display: block;
+	line-height: 1.6em;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	color: #fff;
+}
+h4 {
+	font-family: "OpenSansLight", Calibri, Verdana;
+	font-size: 1.2em;
+	margin-left: -10px;
+	margin-right: -10px;
+	margin-top:10px;
+	margin-bottom:10px;
+	font-weight: bold;
+}
+.question {
+	font-family: "OpenSansLight", Calibri, Verdana;
+	font-size: 1.3em;
+	color: white;
+	padding: 1em .5em .5em .5em;
+	line-height: 1.5em;
+	min-height: 80px;
+}
+.circle {
+	padding-top:8px;
+	font-size: 2.0em;
+	font-weight: bold;
+	width:55px; 
+	height:55px; 
+	position:relative; 
+	float:left; 
+	background: #a3b0e6;
+	border-radius:50%; 
+	margin: -5px 5px 0px 5px; 
+	text-align: center;
+}
+.response, .totals {
+	padding: 10px;
+	width: 190px;
+	height: auto;
+	color: #fff;
+	background: #e74c3c;
+	background:rgba(255,255,255,0.8);
+	position: absolute;
+	
+	left: 0px;
+	margin: 0;
+	z-index: 1000;
+	display: none;
+
+	background: #e64c65;
+	-webkit-transition: background 1.5s ease-in-out;
+	-moz-transition: background 1.5s ease-in-out;
+	-ms-transition: background 1.5s ease-in-out;
+	-o-transition: background 1.5s ease-in-out;
+	transition: background 1.5s ease-in-out;
+
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+}
+.totals {
+	padding: 10px;
+	width: 100%;
+	width: 470px;
+	height: 100%;
+	background: #a3b0e6;
+	color: black;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+}
+.response.ok {
+	background: #a3b0e6;
+	color: black;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+}	
+.response .text {
+	font-size: 1em;
+	line-height: 1.5em;
+}	
+.response h3, .totals h3 {
+	font-size: 1.5em;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+a.close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	font-weight: bold;
+	font-size: 1.0em;
+	background:url("../images/close-icon.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 21px;
+	height: 21px;
+}
+a.close:hover {
+	color:#f2811d;
+}
+.game {
+	position: relative;
+	background-color: #3d4670;
+	width: 470px;
+	height: 580px;
+	height: auto;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	margin: 0 auto;
+
+	-moz-box-shadow: 0 0 15px orange;
+	-webkit-box-shadow:  0 0 15px orange;
+ 	box-shadow:  0px 0px 15px orange;
+}
+figcaption {
+	padding: 5px;
+}
+.game p {
+	margin-top: 0.5em;
+	font-size: 1.8em;
+	padding-bottom: 0.5em;
+}
+#count {
+	color: #f39c12;
+	font-weight: 700;
+	font-size: 1.5em;
+}
+input {
+	width: 330px;
+	min-height: 50px;
+	display: block;
+	/*padding: 0.8em 0;*/
+	margin: 0.8em auto 0;
+	background: #50597b;
+	color: #fff;
+	border: solid 1px #1f253d;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+input.button {
+	background: #1F253D;
+	color: #95a5a6;
+	font-size: 1.2em;
+	padding: 0.2em  1.4em 0.2em 1.4em;
+	padding: 10px;
+	white-space: normal;
+	-webkit-transition: background 1s ease-in-out;
+	-moz-transition: background 1s ease-in-out;
+	-ms-transition: background 1s ease-in-out;
+	-o-transition: background 1s ease-in-out;
+	transition: background 1s ease-in-out;
+}
+input.button:last-child {
+	margin-bottom: 0.8em;
+}
+input.button:hover {
+	background: #e64c65;
+	color: #fff;
+	-webkit-transition: background 1s ease-in-out;
+	-moz-transition: background 1s ease-in-out;
+	-ms-transition: background 1s ease-in-out;
+	-o-transition: background 1s ease-in-out;
+	transition: background 1s ease-in-out;
+	cursor: pointer;
+}
+input.text {
+	text-align: center;
+	padding: 0.2em;
+	font-size: 2em;
+}
+input:focus {
+	outline: none !important;
+}
+::-webkit-input-placeholder {
+   color: #95a5a6;
+}
+:-moz-placeholder { /* Firefox 18- */
+   color: #95a5a6;
+}
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #95a5a6; 
+}
+:-ms-input-placeholder {  
+   color: #95a5a6; 
+}
+.airplane {	
+	position: relative;
+	z-index: 3000;
+}
+.airplane0 {	
+	position: absolute;
+	left: 80px;
+	top: 40px;
+	/*background: url(../images/airplane-r-128.png);
+	
+  -webkit-transform:rotate(-15deg);
+  -moz-transform:rotate(-15deg);
+  -ms-transform:rotate(-15deg);
+  transform:rotate(-15deg);
+  */
+}
+.airplane1 {
+	display: none;
+	position: absolute;
+	left: 380px;
+	top: -10px;
+}
+.airplane2 {
+	display: none;
+	position: absolute;
+	left: 490px;
+	top: -40px;
+}
+.airplane3 {
+	display: none;
+	position: absolute;
+	left: 600px;
+	top: -20px;
+}
+.airplane4 {
+	display: none;
+	position: absolute;
+	left: 670px;
+	top: 50px;
+}
+.airplane5 {
+	display: none;
+	position: absolute;
+	left: 670px;
+	top: 250px;
+}
+.airplane6 {
+	display: none;
+	position: absolute;
+	left: 640px;
+	top: 350px;
+}
+.airplane7 {
+	display: none;
+	position: absolute;
+	left: 640px;
+	top: 530px;
+}
+.airplanew {	
+  -webkit-transform:rotate(-15deg);
+  -moz-transform:rotate(-15deg);
+  -ms-transform:rotate(-15deg);
+  transform:rotate(-15deg);
+}
+div.guessBox {
+	font-family: "OpenSansRegular", Calibri, Verdana;
+	font-size: 1.7em;
+	font-weight: 400;
+
+	height: 80px;
+	margin: 0px 0 0;
+	background: #11a8ab;
+	background: #a3b0e6;
+	padding: 0.4em;
+	display: block;
+	line-height: 2em;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	color: #fff;
+}
+

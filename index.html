@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Quiz: Alternate Reality</title>
+		<meta charset="utf-8"/>		
+		<link rel="stylesheet" href="styles/reset.css">
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,900italic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="styles/style.css"/> 
+		<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
+		<script src="js/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+	</head>
+	<body>		
+		<header> 
+			<!-- logo text -->
+			<h2>Malaysian Airlines Flight 370</h2>
+			<h1>Alternate Reality Quiz</h1>
+		</header>		
+		<div class="airplane">
+			<img src="images/airplane0.png" class="airplane0" alt="airplane">
+			<img src="images/airplane1.png"  class="airplane1" alt="airplane">
+			<img src="images/airplane2.png"  class="airplane2" alt="airplane">
+			<img src="images/airplane3.png"  class="airplane3" alt="airplane">
+			<img src="images/airplane4.png"  class="airplane4" alt="airplane">
+			<img src="images/airplane5.png"  class="airplane5" alt="airplane">
+			<img src="images/airplane6.png"  class="airplane6" alt="airplane">
+			<img src="images/airplane7.png"  class="airplane7" alt="airplane">
+		</div>
+		<div class="response">
+			<a href="#" class="close"></a>
+			<div class="text"></div>	
+		</div>
+		<section class="game"> <!-- Guessing Section -->
+			<div class="totals">
+				<a href="#" class="close"></a>
+				<h3></h3>
+				<div class="text"></div>
+				<h4>What Really Happened to Malaysian Flight 370?</h4>
+				<figure><img src="images/superman2.jpg" width="430" alt="superman">
+					<figcaption>It's a bird ... it's a plane ... no, it's Superman!</figcaption>
+				</figure>
+				<iframe src="http://www.metacafe.com/embed/529336/" width="440" height="248" allowFullScreen frameborder=0></iframe>
+			</div>
+			<h2 id="feedback">Let's Begin Our Journey!</h2>
+			<form>
+				<div class="question">
+					<span class="circle">1</span>
+					<span class="text"></span>
+				</div>
+				<div class="questions">
+	      			<input type="submit" class="button" value="Guess1"/>
+					<input type="submit" class="button" value="Guess2"/>
+					<input type="submit" class="button" value="Guess3"/>
+					<input type="submit" class="button" value="Guess4"/>
+					<input type="submit" class="button" value="Guess5"/>
+				</div>
+			</form>		
+     		<!-- Guesses -->		
+			<div  class="guessBox ">
+				<p>1 of 10 questions</p>
+			</div>
+		</section>
+	</body>
+</html>
