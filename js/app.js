@@ -40,7 +40,7 @@ var processAnswer = function(elem) {
       totalCorrect = totalCorrect + 1;
       $(".response").addClass("ok");
       $(".response .text").html("<h3>Correct!</h3><p>You answered Question "+displayCurrentQuestion+" correctly</p>");
-      $(".response").fadeIn(1000);
+      $(".response").fadeTo(1000, 0.7);
     } else {
        if (QandA[currentQuestion].explanation == "") {
         var answer = QandA[currentQuestion].answers[actualAnswerNumber];
@@ -49,7 +49,7 @@ var processAnswer = function(elem) {
         var explanation = "The correct answer to Question "+displayCurrentQuestion+" is "+ QandA[currentQuestion].explanation;
        }
        $(".response .text").html("<h3>Wrong!</h3>"+explanation);
-       $(".response").fadeIn(1000);
+       $(".response").fadeTo(1000, 0.7);
     }   
     if (currentQuestion == totalQuestions - 1){ // last question!
       $(".response").fadeOut(7000);
@@ -63,7 +63,7 @@ var processAnswer = function(elem) {
       $(".totals").show();
       $(".totals h3").html(scoreMsg);
       $(".totals .text").html(msg);
-      $(".airplane > img").css('display', 'none');
+     $(".airplane > img").css('display', 'none');
       var displayQ = currentQuestion+1;
       $(".airplane .airplane"+displayQ).css('display', 'block');
       currentQuestion = 0;
@@ -105,31 +105,22 @@ $(document).ready(function(){
    q.answer = 4;
    QandA[5] = q;  
 
-   /*
-  q = new Question(6, "What kind of sound was the airplane's ACARS system making?");
-   q.answers = ["A groaning sound","A pinging sound","A chirping sound",  "A yodeling sound","None of the above"];
-   q.answer = 1;
-   QandA[6] = q; 
-   displayQuestion(0);
-  q = new Question(7, "What kind of sounds did the airplane's ACARS system make?");
-   q.answers = ["Peeps","Pings","Chirps",  "Yodels","None of the above"];
-   q.answer = 1;
-   QandA[7] = q; 
-*/
    newQuiz();
    $(".questions .button").on("click", function(evt){
       processAnswer(this);
    });
-  /*--- Display response box ---*/
-  	$(".what").click(function(){
-    	$(".response").fadeIn(1000);
-  	});
+
   	/*--- Hide response box ---*/
   	$(".response a.close").click(function(event){
       event.preventDefault();
   		//$(".response").fadeOut(1000);
       $(this).closest("div").fadeOut(1000);
   	});
+      $(".response").click(function(event){
+      event.preventDefault();
+      //$(".response").fadeOut(1000);
+      $(this).closest("div").fadeOut(1000);
+    });
     $(".totals a.close").click(function(event){
       event.preventDefault();
       $(this).closest("div").fadeOut(1000);      
