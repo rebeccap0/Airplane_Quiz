@@ -86,22 +86,22 @@ $(document).ready(function(){
    q.answer = 0;
    QandA[2] = q;
    q = new Question(3, "What erroneous assertion was made by the Malaysian authorities?");
-   q.answers = [ "That the Gulf of Thailand was a likely route",
-                  "That the airplane pinged a satellite after landing",
-                "That the pilot signed off after the ACARs was off", 
-               "That the airplane's left turn had been preprogrammed with nefarious intent",
-                "All of the above and more"];
+   q.answers = ["That the ACARs was already off when the pilot signed off and acted like everything was ok", 
+               "That the airplane's sharp left turn had been pre-programmed with nefarious intent",
+                  "That the Gulf of Thailand was a likely route",
+                  "That the airplane landed and pinged a satellite",
+                  "All of the above and more"];
    q.answer = 4;
    QandA[3] = q;
     q = new Question(4, "What was the cause of Malaysian Airlines Flight 370's disappearance?");
    q.answers = ["Crew interference with the transponders","A catastrophic electrical failure",
    "A parallel universe which sucked the airplane into an alternate space-time continuum",
-    "It intentionally flew directly to heaven","All of the above"];
+    "It intentionally flew directly to heaven","None of the above"];
    q.answer = 2;
    QandA[4] = q;   
     q = new Question(5, "Where did Malaysian Airlines Flight 370 end up?");
    q.answers = ["On a remote island with a 5000-ft runway",
-   "With a radical Uighur group in a remote Chinese village","Swallowed by a black hole",  "In the Indian Ocean","None of the above"];
+   "With radical Uighurs in a remote Chinese village","Swallowed by a black hole",  "In the Twilight Zone","None of the above"];
    q.answer = 4;
    QandA[5] = q;  
 
