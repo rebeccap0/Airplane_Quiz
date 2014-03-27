@@ -73,7 +73,7 @@ var processAnswer = function(elem) {
     } 
 }
 $(document).ready(function(){
-	 var q = new Question(0, "What was the last voice communication from Malaysian Flight 370's cockpit?");
+	 var q = new Question(0, "What was the last voice communication from Malaysian Airlines Flight 370's cockpit?");
    q.answers = ["We'd like to declare an emergency!","All right, sleep tight.","All right, good night.","Where am I?","None of the above"];
    q.answer = 2;
    QandA[0] = q;
@@ -89,7 +89,7 @@ $(document).ready(function(){
    q.answers = ["That the airplane had already landed when it pinged a satellite","That the ACARs was turned off before the co-pilot signed off",  "That the airplane's left turn had been pre-programmed, presumably by someone with nefarious intent","That texting news of a tragedy to affected family members is a good PR move","All of the above"];
    q.answer = 4;
    QandA[3] = q;
-    q = new Question(4, "What was the cause of Malaysian Airlines 370's disappearance?");
+    q = new Question(4, "What was the cause of Malaysian Airlines Flight 370's disappearance?");
    q.answers = ["Crew interference with the transponders","A catastrophic electrical failure",
    "The emergence of a hidden parallel universe which sucked the airplane into its alternate space-time continuum",
     "It intentionally flew directly to heaven","All of the above"];
