@@ -78,11 +78,11 @@ $(document).ready(function(){
    q.answer = 2;
    QandA[0] = q;
    q = new Question(1, "What kind of sound did the airplane's ACARS system make?");
-   q.answers = ["A groaning sound","A pinging sound","A chirping sound",  "A yodeling sound","None of the above"];
+   q.answers = ["Peeps","Pings","Chirps",  "Yodels","None of the above"];
    q.answer = 1;
    QandA[1] = q;
    q = new Question(2, "The oceans are full of ...?");
-   q.answers = ["Flotsam","Airplanes","Pinging devices",  "CNN reporters","Black boxes"];
+   q.answers = ["Flotsam","Airplanes","Transponders",  "CNN reporters","Black boxes"];
    q.answer = 0;
    QandA[2] = q;
    q = new Question(3, "What erroneous assertion was made by the Malaysian authorities?");
@@ -111,8 +111,8 @@ $(document).ready(function(){
    q.answer = 1;
    QandA[6] = q; 
    displayQuestion(0);
-  q = new Question(7, "What kind of sound was the airplane's ACARS system making?");
-   q.answers = ["A groaning sound","A pinging sound","A chirping sound",  "A yodeling sound","None of the above"];
+  q = new Question(7, "What kind of sounds did the airplane's ACARS system make?");
+   q.answers = ["Peeps","Pings","Chirps",  "Yodels","None of the above"];
    q.answer = 1;
    QandA[7] = q; 
 */
