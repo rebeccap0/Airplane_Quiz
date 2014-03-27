@@ -73,8 +73,8 @@ var processAnswer = function(elem) {
     } 
 }
 $(document).ready(function(){
-	 var q = new Question(0, "What was the last voice communication from Malaysian Airlines Flight 370's cockpit?");
-   q.answers = ["We'd like to declare an emergency!","All right, sleep tight.","All right, good night.","Where am I?","None of the above"];
+	 var q = new Question(0, "What was the last voice communication from Malaysian Airlines Flight 370?");
+   q.answers = ["'We'd like to declare an emergency!'","'All right, sleep tight.'","'All right, good night.'","'Where am I?'","None of the above"];
    q.answer = 2;
    QandA[0] = q;
    q = new Question(1, "What kind of sound did the airplane's ACARS system make?");
@@ -82,22 +82,26 @@ $(document).ready(function(){
    q.answer = 1;
    QandA[1] = q;
    q = new Question(2, "The oceans are full of ...?");
-   q.answers = ["Floatsam","Airplanes","Pinging devices",  "CNN reporters","Black boxes"];
+   q.answers = ["Flotsam","Airplanes","Pinging devices",  "CNN reporters","Black boxes"];
    q.answer = 0;
    QandA[2] = q;
-   q = new Question(3, "What assertion was made by Malaysian authorities that was later contradicted by evidence?");
-   q.answers = ["That the airplane had already landed when it pinged a satellite","That the ACARs was turned off before the co-pilot signed off",  "That the airplane's left turn had been pre-programmed, presumably by someone with nefarious intent","That texting news of a tragedy to affected family members is a good PR move","All of the above"];
+   q = new Question(3, "What erroneous assertion was made by the Malaysian authorities?");
+   q.answers = [ "That the Gulf of Thailand was a likely route",
+                  "That the airplane pinged a satellite after landing",
+                "That the pilot signed off after the ACARs was off", 
+               "That the airplane's left turn had been preprogrammed with nefarious intent",
+                "All of the above and more"];
    q.answer = 4;
    QandA[3] = q;
     q = new Question(4, "What was the cause of Malaysian Airlines Flight 370's disappearance?");
    q.answers = ["Crew interference with the transponders","A catastrophic electrical failure",
-   "The emergence of a hidden parallel universe which sucked the airplane into its alternate space-time continuum",
+   "A parallel universe which sucked the airplane into an alternate space-time continuum",
     "It intentionally flew directly to heaven","All of the above"];
    q.answer = 2;
    QandA[4] = q;   
     q = new Question(5, "Where did Malaysian Airlines Flight 370 end up?");
-   q.answers = ["On a remote island with a 5000-ft landing strip, a hangar to hide the plane in, and no cell phone service",
-   "With a radical Ungiur group in a remote Chinese village","Swallowed by a black hole",  "In the Indian Ocean","None of the above"];
+   q.answers = ["On a remote island with a 5000-ft runway",
+   "With a radical Uighur group in a remote Chinese village","Swallowed by a black hole",  "In the Indian Ocean","None of the above"];
    q.answer = 4;
    QandA[5] = q;  
 
